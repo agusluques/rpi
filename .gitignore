@@ -8,5 +8,6 @@ godns/*
 pihole/*
 wg-easy/*
 diun/*
+swag/*
 
 !/**/.gitkeep

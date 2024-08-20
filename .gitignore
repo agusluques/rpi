@@ -9,5 +9,6 @@ pihole/*
 wg-easy/*
 diun/*
 swag/*
+home-assistant/*
 
 !/**/.gitkeep

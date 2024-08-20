@@ -1,5 +1,16 @@
 services:
 
+  homeassistant:
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    container_name: homeassistant
+    volumes:
+      - ./home-assistant:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+
   godns:
     image: timothyye/godns:2.9.4
     container_name: godns
@@ -82,7 +93,8 @@ services:
       - "80:80"
     restart: unless-stopped
     networks:
-      - wg-easy
+      wg-easy:
+        ipv4_address: 10.8.1.4
 
 networks:
   wg-easy:

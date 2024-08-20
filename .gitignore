@@ -7,5 +7,6 @@
 godns/*
 pihole/*
 wg-easy/*
+diun/*
 
 !/**/.gitkeep

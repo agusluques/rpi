@@ -1,0 +1,9 @@
+.env
+.DS_Store
+.gitconfig
+.ssh*
+
+#folders
+godns/
+pihole/
+wg-easy/

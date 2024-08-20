@@ -4,6 +4,8 @@
 .ssh*
 
 #folders
-godns/
-pihole/
-wg-easy/
+godns/*
+pihole/*
+wg-easy/*
+
+!/**/.gitkeep

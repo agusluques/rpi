@@ -10,5 +10,6 @@ wg-easy/*
 diun/*
 swag/*
 home-assistant/*
+firefox/*
 
 !/**/.gitkeep

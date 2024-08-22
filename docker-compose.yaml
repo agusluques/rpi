@@ -96,6 +96,19 @@ services:
       wg-easy:
         ipv4_address: 10.8.1.4
 
+  firefox:
+    image: jlesage/firefox:v24.08.1
+    container_name: firefox 
+    ports:
+      - "5800:5800/tcp"
+      - "5900:5900/tcp"
+    environment:
+      - TZ=$TZ
+      - DISPLAY_WIDTH=1024
+      - DISPLAY_HEIGHT=768
+    volumes:
+      - "./firefox:/config:rw"
+
 networks:
   wg-easy:
     ipam:

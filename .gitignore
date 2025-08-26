@@ -11,5 +11,7 @@ diun/*
 swag/*
 home-assistant/*
 firefox/*
+mosquitto/*
+zigbee2mqtt/*
 
 !/**/.gitkeep
